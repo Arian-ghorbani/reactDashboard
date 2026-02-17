@@ -1,0 +1,5 @@
+.navbar,
+.right-section,
+.left-section {
+  @apply flex items-center;
+}

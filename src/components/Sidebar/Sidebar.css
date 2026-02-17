@@ -1,0 +1,29 @@
+@reference "../../../public/css/index.css";
+
+.sidebar-item,
+.exit-btn {
+  @apply w-full h-9.5 p-2 flex items-center justify-start gap-x-2 text-[17px] rounded-lg;
+}
+
+.sidebar-item:hover {
+  @apply bg-tertiary;
+}
+
+.sidebar-item,
+.sidebar-item .icon,
+.sidebar-item .title {
+  @apply transition-colors duration-250;
+}
+
+.sidebar-item.active {
+  @apply bg-tertiary *:text-primary!;
+}
+
+.sidebar-item .icon,
+.exit-btn .icon {
+  @apply flex items-center justify-center text-primary-text *:size-4.5;
+}
+
+.sidebar-item .title {
+  @apply text-primary-text;
+}

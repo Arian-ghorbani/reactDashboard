@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "kalameh-bold";
+  src: url("/fonts/Kalameh-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "kalameh-medium";
+  src: url("/fonts/Kalameh-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "kalameh-regular";
+  src: url("/fonts/Kalameh-Regular.ttf") format("truetype");
+  font-weight: normal;
+}

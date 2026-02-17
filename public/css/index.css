@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /*! Fonts */
+  --font-kalameh-bold: "kalameh-bold";
+  --font-kalameh-medium: "kalameh-medium";
+  --font-kalameh-regular: "kalameh-regular";
+  /*! Colors */
+  --color-primary: #fb2c36;
+  --color-secondary: #e7000b;
+  --color-tertiary: #ffc9c9;
+  --color-primary-text: #101828;
+  --color-secondary-text: #6a7282;
+  --color-base-background: #f1f1f1;
+  --color-card: #ffffff;
+}
+
+@layer base {
+  * {
+    @apply font-kalameh-regular;
+  }
+
+  body {
+    @apply text-base bg-base-background;
+  }
+
+  .container {
+    @apply max-w-375 mx-auto;
+  }
+}
