@@ -13,7 +13,9 @@ function MainRoot() {
         <div className="pb-6 flex grow shrink">
           <Sidebar />
 
-          <main></main>
+          <main className="pr-10 grow shrink space-y-4">
+            <Outlet />
+          </main>
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@ import Logo from "./components/Logo/Logo";
 import Bell from "./components/Bell/Bell";
 import Profile from "./components/Profile/Profile";
 import SearchBox from "./components/SearchBox/SearchBox";
+import Separator from "./components/Separator/Separator";
 
 function Topbar() {
   return (
@@ -14,6 +15,7 @@ function Topbar() {
 
       <section className="left-section gap-x-5">
         <Bell />
+        <Separator />
         <Profile />
       </section>
     </nav>

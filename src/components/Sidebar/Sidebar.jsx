@@ -1,6 +1,6 @@
 import "./Sidebar.css";
 import { NavLink } from "react-router";
-import sidebarData from "../../data/sidebarData";
+import sidebarData from "../../data/SidebarData";
 import { RxExit } from "react-icons/rx";
 import clsx from "clsx";
 import ToggleButton from "./components/ToggleButton/ToggleButton";
@@ -18,7 +18,7 @@ function Sidebar() {
   return (
     <aside
       className={clsx(
-        "p-4.5 flex flex-col justify-between relative bg-card rounded-xl",
+        "p-4.5 flex flex-col justify-between relative bg-card rounded-2xl",
         isOpen ? "w-50" : "w-fit",
       )}
     >

@@ -2,7 +2,7 @@
 
 .sidebar-item,
 .exit-btn {
-  @apply w-full h-9.5 p-2 flex items-center justify-start gap-x-2 text-[17px] rounded-lg;
+  @apply w-full h-9.5 p-2 flex items-center justify-start gap-x-2 text-[17px] rounded-xl;
 }
 
 .sidebar-item:hover {

@@ -21,7 +21,7 @@
   }
 
   body {
-    @apply text-base bg-base-background;
+    @apply text-base bg-base-background text-primary-text;
   }
 
   .container {

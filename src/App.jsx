@@ -1,5 +1,5 @@
-import "../public/css/index.css";
-import "../public/css/fonts.css";
+import "./css/index.css";
+import "./css/fonts.css";
 import router from "./routes";
 import { RouterProvider, ScrollRestoration } from "react-router";
 

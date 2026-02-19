@@ -1,11 +1,18 @@
 function Profile() {
   return (
-    <div className="profile-wrapper object-cover object-bottom size-10 rounded-full overflow-hidden">
+    <div className="profile-wrapper flex items-center gap-x-3">
       <img
-        src="/public/images/user-image.webp"
+        src="/images/user-image.webp"
         alt="User Profile"
-        className="scale-130"
+        className="size-11.5 rounded-full"
       />
+
+      <div>
+        <h4 className="username font-kalameh-bold text-[0.937rem]">
+          آرین قربانی
+        </h4>
+        <p className="user-type text-sm text-secondary-text">مدیرعامل</p>
+      </div>
     </div>
   );
 }
