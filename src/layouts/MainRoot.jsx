@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import Topbar from "../components/Topbar/Topbar";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Topbar from "../features/Topbar/Topbar";
+import Sidebar from "../features/Sidebar/Sidebar";
 
 function MainRoot() {
   return (

@@ -36,7 +36,7 @@ function Sidebar() {
               className={clsx("sidebar-item", ({ isActive }) => isActive)}
               end
             >
-              <span className="icon">{item.icon}</span>
+              <span className="icon">{<item.icon />}</span>
               {isOpen && <span className="title">{item.title}</span>}
             </NavLink>
           );

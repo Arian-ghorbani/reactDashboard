@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import TopSection from "../../components/TopSection/TopSection";
-import SummaryCard from "./components/SummaryCard/SummaryCard";
+import SummaryCard from "../../features/SummaryCard/SummaryCard";
 import { generateSummaries } from "/src/utils/home.js";
 import summariesData from "../../data/homeData";
 import DashboardChart from "../../features/DashboardChart/DashboardChart";
@@ -11,7 +11,7 @@ function Home() {
     const summarys = generateSummaries({ ...summariesData });
 
     return (
-      <div className="summary-section flex items-center justify-between gap-x-6">
+      <div className="summary-section grid grid-cols-4 gap-x-6">
         {summarys.map((summary) => {
           return <SummaryCard key={summary.id} {...summary} />;
         })}
