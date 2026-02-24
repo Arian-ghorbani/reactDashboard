@@ -4,6 +4,8 @@ import SummaryCard from "../../features/SummaryCard/SummaryCard";
 import { generateSummaries } from "/src/utils/home.js";
 import summariesData from "../../data/homeData";
 import DashboardChart from "../../features/DashboardChart/DashboardChart";
+import LastProducts from "../../features/LastProducts/LastProducts";
+import LastUsers from "../../features/LastUsers/LastUsers";
 
 function Home() {
   const navigate = useNavigate();
@@ -41,13 +43,15 @@ function Home() {
         Summary={<Summary />}
       />
 
-      <section>
-        <div className="w-1/2 p-4 pt-8 bg-card rounded-2xl">
+      <section className="h-115 flex items-center justify-between gap-x-4">
+        <LastUsers />
+
+        <div className="h-full flex-1 p-4 pt-8 bg-card rounded-2xl">
           <DashboardChart />
         </div>
-
-        {/* New users */}
       </section>
+
+      <LastProducts />
     </>
   );
 }

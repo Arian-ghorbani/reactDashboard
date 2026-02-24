@@ -19,7 +19,7 @@ function DashboardChart() {
     <BarChart
       style={{
         width: "100%",
-        maxHeight: "70vh",
+        maxHeight: "100%",
         aspectRatio: 1.618,
         direction: "ltr",
       }}

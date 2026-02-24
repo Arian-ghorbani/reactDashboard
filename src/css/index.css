@@ -28,3 +28,45 @@
     @apply max-w-375 mx-auto;
   }
 }
+
+@layer components {
+  .table-body-row:nth-child(odd) {
+    @apply bg-card;
+  }
+
+  .table-body-row:nth-child(even) {
+    @apply bg-base-background;
+  }
+
+  .table-cell:nth-child(3) > p {
+    @apply w-fit px-4 rounded-xl;
+  }
+
+  .pagination-prev-btn,
+  .pagination-next-btn,
+  .pagination-button {
+    @apply size-10 flex items-center justify-center rounded-xl cursor-pointer transition-colors duration-200;
+  }
+
+  .pagination-prev-btn,
+  .pagination-next-btn {
+    @apply bg-primary text-white hover:bg-tertiary hover:text-primary-text active:bg-primary;
+  }
+
+  .pagination-prev-btn:disabled,
+  .pagination-next-btn:disabled {
+    @apply bg-gray-100 cursor-not-allowed hover:text-white;
+  }
+
+  .pagination-button {
+    @apply bg-tertiary text-primary-text hover:bg-primary hover:text-white active:bg-tertiary;
+  }
+
+  .pagination-button.active-tab {
+    @apply bg-primary text-white;
+  }
+
+  .user-card:nth-child(even) {
+    @apply bg-gray-100;
+  }
+}
